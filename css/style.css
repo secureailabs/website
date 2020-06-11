@@ -406,7 +406,6 @@ i {
 
 .main_slider_area .rev_slider .tp-revslider-mainul li .slider_text_box .first_text {
   font-weight: normal !important;
-  color: #fff;
 }
 
 .main_slider_area .rev_slider .tp-revslider-mainul li .slider_text_box .secand_text {
@@ -2458,5 +2457,9 @@ i {
 .padded-sides {
   padding: 50px 50px;
   }
+
+.padded-bottom{
+  padding: 0px 0px 100px 0px;
+}
 
 /*# sourceMappingURL=style.css.map */
