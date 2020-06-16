@@ -911,8 +911,7 @@ i {
   background-image: -moz-linear-gradient(10deg, #00b0f0 0%, #9b8aff 100%);
   background-image: -webkit-linear-gradient(10deg, #00b0f0 0%, #9b8aff 100%);
   background-image: -ms-linear-gradient(10deg, #00b0f0 0%, #9b8aff 100%);
-  padding: 160px 0px 170px 0px;
-  border-bottom: 2px solid #fff;
+  padding: 100px 0px 100px 0px;
 }
 
 .talk_text {
@@ -939,7 +938,9 @@ i {
 /* Service Solution Area css
 ============================================================================================ */
 .service_solution_area {
-  background: url(../img/service-bg.jpg) no-repeat fixed center right;
+  background-image: -moz-linear-gradient(10deg, #00b0f0 0%, #9b8aff 100%);
+  background-image: -webkit-linear-gradient(10deg, #00b0f0 0%, #9b8aff 100%);
+  background-image: -ms-linear-gradient(10deg, #00b0f0 0%, #9b8aff 100%);
   background-size: cover;
   position: relative;
   z-index: 3;
