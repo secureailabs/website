@@ -215,24 +215,28 @@
                         <p>We want to hear from you. Reach out to us about general inquiries, business or partnership opportunities, news and publications, or other projects we can work on together.</p>
                     </div>
                     <div class="col-md-6">
-                        <form class="contact_us_form row" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                        <form class="contact_us_form row" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSc45l07RV70YVBLGVfjH0HLnZ7IfQq-47MlQarqoGOffb6plQ/formResponse" method="post" id="contactForm" target="dummyframe">
                             <div class="form-group col-lg-6">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                                <input type="text" class="form-control" id="name" name="entry.536404415" placeholder="Name">
                             </div>
                             <div class="form-group col-lg-6">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                <input type="email" class="form-control" id="email" name="entry.1823665522" placeholder="Email">
                             </div>
                             <div class="form-group col-lg-12">
-                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject*">
+                                <input type="text" class="form-control" id="company" name="entry.1503684126" placeholder="Company">
                             </div>
                             <div class="form-group col-lg-12">
-                                <textarea class="form-control" name="message" id="message" rows="1" placeholder="Message"></textarea>
+                                <textarea class="form-control" name="entry.1174145363" id="message" rows="1" placeholder="Message"></textarea>
                             </div>
                             <div class="form-group col-lg-12">
-                                <button type="submit" value="submit" class="btn submit_btn form-control">Send</button>
+                                <button type="submit" value="submit" class="btn submit_btn form-control g-recaptcha" id="submit" data-sitekey="6LfltaUZAAAAADXDK2s4jg-MJc_PD_wINzsY7Mi0" data-callback="onSubmit">Send</button>
                             </div>
                         </form>
+                            <div class="" id="submit_message">
+                                <p>We've received your message. Thank you, and we will reach back out to you shortly.
+                            </div>
                     </div>
+                    <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
                 </div>
             </div>
         </section>
@@ -325,7 +329,13 @@
         <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
         <script src="vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
         <script src="js/smoothscroll.js"></script>
-        
+        <script src="js/submit.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+         <script>
+           function onSubmit(token) {
+             document.getElementById("contactForm").submit();
+           }
+         </script>
         <script src="js/theme.js"></script>
     </body>
 </html>
